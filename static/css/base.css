@@ -1,10 +1,36 @@
+/* General ----------------------------------------- */
+a:hover {
+    text-decoration: none;
+}
+
+/* Header ----------------------------------------- */
+.main-logo-link {
+    width: fit-content;
+}
+
+.logo {
+    height: 100px;
+}
+
+.site-nav {
+    color: #fff;
+    padding: 0.2em 1em;
+}
+
+.site-nav:hover {
+    color: #000;
+    background: #fff;
+    border-radius: 1em;
+}
+
+/* Body ----------------------------------------- */
 .bg-left {
     height: 100vh;
     width: 40%;
 }
 
 .bg-right {
-    background-color: gray;
+    background-color: #4EB276;
     height: 100vh;
     width: 60%;
     margin-left: auto;
@@ -18,5 +44,9 @@
     border-right: 13.9vh;
     border-left: 13.9vh solid #fff;
     z-index: 1;
-    margin-right: -100px;
+    margin-right: -13.9vh;
+}
+
+.social-links {
+    margin-top: 50vh;
 }

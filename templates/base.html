@@ -59,23 +59,20 @@
   <header class="container-fluid fixed-top">
     <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
       
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-center">
-          <a href="{% url 'home' %}" class="nav-link main-logo-link mx-auto">
-              <img src="" alt="" class="logo mx-auto">
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+          <a href="{% url 'home' %}" class="nav-link main-logo-link">
+              <img src="static\images\ajo-logo.png" alt="ajo logo" class="logo mx-auto">
           </a>
       </div>
-      <div class="col-12 col-lg-4 ml-auto py-1 py-lg-0">
-            <div class="border-0 text-white">
-              {% if request.user.is_authenticated %}
+      <div class="col-12 col-lg-6 ml-auto py-1 py-lg-0 align-content-center">
+            <div class="d-flex border-0 text-white justify-content-around">
               {% if request.user.is_superuser %}
                 <a href="{% url 'admin:index' %}" target="_blank" rel="nofollow" class="">Admin Panel</a>
               {% endif %}
-              <a href="" class="">My Profile</a>
-              <a href="" class="">Logout</a>
-              {% else %}
-              <a href="" class="">Register</a>
-              <a href="" class="">Login</a>
-              {% endif %}
+              <a href="" class="site-nav">About Me</a>
+              <a href="" class="site-nav">Skills</a>
+              <a href="" class="site-nav">Portfolio</a>
+              <a href="" class="site-nav">Contact Me</a>
             </div>
           </li>
         </ul>
@@ -103,22 +100,9 @@
 
   {% block page_header %}
   {% endblock %}
-    <div class="background d-flex">
-        <div class="bg-left"></div>
-        <div class="bg-seperator"></div>
-        <div class="bg-right"></div>
-    </div>
+
   {% block content %}
   {% endblock %}
-
-  <footer class="container-fluid fixed-bottom">
-    <div class="row  pt-lg-2 d-flex ">
-        <div class="col-12 d-flex justify-content-center align-items-center">
-            <a href="https://www.linkedin.com/in/ashley-preece-82698a142/" target="_blank" rel="nofollow" aria-label="Visit my Linkedin page (opens in a new tab)"><i class="fa-brands fa-linkedin text-orange"></i></a>
-            <a href="https://github.com/Ash-5p" target="_blank" rel="nofollow" aria-label="Visit my Github page (opens in a new tab)"><i class="fa-brands fa-square-github text-orange"></i></a>
-        </div>
-    </div>
-  </footer>
 
   {% block postloadjs %}
 
