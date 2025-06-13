@@ -1,6 +1,11 @@
 /* General ----------------------------------------- */
+a {
+    color: inherit;
+}
+
 a:hover {
     text-decoration: none;
+    color: inherit;
 }
 
 /* Header ----------------------------------------- */
@@ -21,6 +26,10 @@ a:hover {
     color: #000;
     background: #fff;
     border-radius: 1em;
+}
+
+.navbar-toggler {
+    margin: 5px
 }
 
 /* Body ----------------------------------------- */
@@ -49,4 +58,16 @@ a:hover {
 
 .social-links {
     margin-top: 50vh;
+    font-size: 2.5em;
+    color: #4EB276;
+    background: white;
+    border-radius: 0.2em;
+    box-shadow: #000 -3px 2px 5px 0px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-image {
+    height: 60vh;
 }
